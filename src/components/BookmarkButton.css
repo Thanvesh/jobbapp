@@ -1,0 +1,37 @@
+/* BookmarkButton.css */
+.bookmark-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 50px; /* Rounded button */
+  }
+  
+  .bookmark-button.bookmarked {
+    background-color: #ff6347; /* Tomato color for bookmarked */
+    color: white;
+  }
+  
+  .bookmark-button.bookmarked:hover {
+    background-color: #ff4500; /* Darker tomato color on hover */
+  }
+  
+  .bookmark-button:hover {
+    background-color: #007bff;
+    color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .bookmark-icon {
+    margin-right: 10px;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .bookmark-button:hover .bookmark-icon {
+    transform: scale(1.1);
+  }
+  

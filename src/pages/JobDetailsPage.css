@@ -1,0 +1,146 @@
+/* JobDetailsPage.css */
+
+.job-details-card {
+    margin: 20px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    position: relative;
+}
+
+.job-details-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.job-details-container {
+    position: relative;
+  }
+  
+  .back-button {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    background: #003d7a ;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #d7d9da;
+    transition: color 0.2s ease;
+    border-radius:50% ;
+    z-index: 1;
+  }
+  
+  .back-button:hover {
+    color: #003d7a;
+  }
+  
+.job-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.job-role {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #6c757d;
+}
+
+.job-content {
+    margin-top: 20px;
+}
+
+.contact-button {
+    margin-right: 10px;
+    font-size: 1rem;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.job-image {
+    height: 300px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.error-message {
+    text-align: center;
+    color: red;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.bookmark-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.bookmark-icon:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.bookmark-icon .icon {
+    color: #ff6347; /* Bookmark color */
+    font-size: 1.5rem;
+}
+@media (max-width: 768px) {
+    .job-details-card {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .job-title {
+        font-size: 1.5rem;
+    }
+
+    .job-role {
+        font-size: 1rem;
+    }
+
+    .contact-button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    .job-image {
+        height: 200px;
+    }
+}
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #0056b3;
+    transition: color 0.2s ease;
+  }

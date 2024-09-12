@@ -1,0 +1,38 @@
+/* BookmarksPage.css */
+.bookmarks-page {
+    padding: 20px;
+  }
+  
+  .spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full screen spinner */
+  }
+  
+  .spinner-container .spinner-border {
+    width: 4rem;
+    height: 4rem;
+  }
+  
+  .alert-info {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  
+  .row {
+    margin-top: 20px;
+  }
+  
+  /* Additional styling for card layout */
+  .job-card {
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+  }
+  
+  .job-card:hover {
+    transform: scale(1.03); /* Slight zoom effect on hover */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  }
+  

@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
+/* Ensure the content doesn't overlap the bottom navbar */
+.content-container {
+  padding-bottom: 80px; /* Adjust to navbar height */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Style the bottom navigation bar */
+.bottom-navbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px; /* Set the height for better touch targets */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-link {
+  font-size: 14px;
+  color: white;
+  padding: 8px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.nav-link span {
+  display: block;
+  font-size: 24px; /* Larger icon size for better visibility */
+}
+
+.navbar-dark .nav-link {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.navbar-dark .nav-link:hover {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Ensure bottom navbar is mobile-friendly */
+@media (max-width: 576px) {
+  .navbar {
+    font-size: 12px;
   }
-  to {
-    transform: rotate(360deg);
+  .nav-link span {
+    font-size: 20px;
   }
 }
